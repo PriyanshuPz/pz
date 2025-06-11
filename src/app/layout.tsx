@@ -12,7 +12,8 @@ const fonts = DM_Sans({
   subsets: ["latin"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://priyanshu.dev";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://priyanshu-verma.vercel.app";
 
 export const metadata: Metadata = {
   title: {
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${BASE_URL}/og-image.png`,
+        url: `${BASE_URL}/og.png`,
         width: 1200,
         height: 630,
         alt: "Priyanshu Verma",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     site: "@PriyanshuPz",
     title: "Priyanshu Verma",
     description: "A passionate Software Developer from India.",
-    images: `${BASE_URL}/og-image.png`,
+    images: `${BASE_URL}/og.png`,
   },
   robots: {
     index: true,
