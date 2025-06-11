@@ -8,15 +8,15 @@ export default function GiscusComponent() {
     <div className="mt-8">
       <Giscus
         repo="PriyanshuPz/Pz"
-        repoId="R_kgDOMq_-tA"
+        repoId="R_kgDOO5tKEg"
         category="General"
-        categoryId="DIC_kwDOMq_-tM4Cirpt"
+        categoryId="DIC_kwDOO5tKEs4CrVUi"
         mapping="number"
-        term="2"
+        term="1"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="bottom"
-        theme="noborder_dark"
+        theme="noborder_gray"
         lang="en"
         loading="lazy"
       />

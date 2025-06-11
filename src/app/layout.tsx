@@ -6,6 +6,7 @@ import KProvider from "./components/common/KProvider";
 import { Providers } from "./providers";
 import LayoutWrapper from "./components/common/LayoutWrapper";
 import CommandBarInvokar from "./components/common/CommandBarInvokar";
+import { Analytics } from "@vercel/analytics/next";
 
 const fonts = DM_Sans({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
           </Providers>
           <CommandBarInvokar />
         </KProvider>
+        <Analytics />
       </body>
     </html>
   );
