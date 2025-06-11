@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js, featuring a clean design, command bar navigation, and multiple content sections.
 
-First, run the development server:
+## ✨ Features
+
+- **Modern Design**: Clean and responsive UI with subtle animations and thoughtful interactions
+- **Command Bar Navigation**: Press `⌘+K` to quickly navigate between different sections
+- **Multiple Content Sections**:
+  - Home/About page with professional summary
+  - Projects showcase
+  - Blog posts
+  - Guestbook for visitors to leave comments
+- **Performance Optimized**: Fast loading times with Next.js
+- **Fully Responsive**: Looks great on all devices from mobile to desktop
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
+- **Comments System**: Giscus (GitHub Discussions-based)
+- **Analytics**: Vercel Analytics
+- **Command Palette**: kbar
+
+## 📂 Project Structure
+
+```
+src/
+├── app/                    # Next.js app directory
+│   ├── components/         # Reusable UI components
+│   │   ├── about/          # About page components
+│   │   ├── blog/           # Blog related components
+│   │   ├── common/         # Shared components (Navbar, Footer, etc.)
+│   │   └── projects/       # Project showcase components
+│   ├── blog/               # Blog page
+│   ├── guestbook/          # Guestbook page
+│   ├── projects/           # Projects page
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Homepage
+├── data/                   # Data files for content
+└── lib/                    # Utility functions
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/PriyanshuPz/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔍 Navigation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Home**: `/` - Professional summary and introduction
+- **Blog**: `/blog` - Technical articles and thoughts
+- **Projects**: `/projects` - Showcase of personal and professional work
+- **Guestbook**: `/guestbook` - Leave comments and feedback
 
-## Learn More
+## ⌨️ Keyboard Shortcuts
 
-To learn more about Next.js, take a look at the following resources:
+- `⌘+K` or `Ctrl+K`: Open command palette
+- `B`: Navigate to blog
+- `P`: Navigate to projects
+- `G`: Navigate to guestbook
+- `A`: Navigate to about/home
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Content data is stored in separate files under the `data/` directory:
 
-## Deploy on Vercel
+- `blogs.ts`: Blog post information
+- `projects.ts`: Project details
+- `skills.ts`: Technical skills
+- `socialLinks.tsx`: Social media profiles
+- `works.ts`: Work experience
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Priyanshu Verma**
+
+- GitHub: [@PriyanshuPz](https://github.com/PriyanshuPz)
+- Twitter: [@PriyanshuPz](https://twitter.com/PriyanshuPz)
+
+---
+
+Made with ❤️ by Priyanshu Verma
