@@ -1,4 +1,6 @@
 const projectsImages = {
+  jocasta:
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1749613374/og_qym8nv.png",
   rak: "https://res.cloudinary.com/pz-public-assets/image/upload/v1749618481/rak_rq1rqn.jpg",
   statStream:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1749619547/statstream_se4ae3.jpg",
@@ -15,6 +17,13 @@ const projectsImages = {
 };
 
 const projects = [
+  {
+    image: projectsImages.jocasta,
+    title: "Jocasta",
+    description:
+      "A personal AI assistant to interact with your notes, PDFs, and learning materials — like chatting with your second brain.",
+    url: "https://jocasta.vercel.app/",
+  },
   {
     image: projectsImages.rak,
     title: "Rak",

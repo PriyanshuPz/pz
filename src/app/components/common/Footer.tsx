@@ -73,7 +73,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} All rights reserved.
         </p>
         <Link
-          href="https://x.com/PriyanshuPz"
+          href="/guestbook"
           className="inline-flex items-center space-x-1 text-white/85 hover:text-[#FF3B00] transition-colors duration-200 group"
         >
           <span className="text-sm sm:text-base">

@@ -1,6 +1,6 @@
 const worksImages = {
-  jocasta:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1749614471/jocasta_logo_ge2bzf.png",
+  p8labs:
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1750742834/p8labs_logo_xw8qgy.png",
   pelton:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1749615382/api_jekeag.png",
   gssoc:
@@ -10,11 +10,11 @@ const worksImages = {
 
 const works = [
   {
-    image: worksImages.jocasta,
+    image: worksImages.p8labs,
     imageBg: "bg-[#fff]",
-    companyName: "Jocasta AI",
-    role: "Founder & Builder",
-    startAt: "May 2025",
+    companyName: "P8' Labs",
+    role: "Founder & Curator",
+    startAt: "June 2025",
     endAt: "Present",
   },
   {

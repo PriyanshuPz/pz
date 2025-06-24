@@ -7,15 +7,15 @@ import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image";
 
 const currentProject = {
-  title: "Building Jocasta AI 🚀",
+  title: "Building KbNet 🌿",
   description:
-    "A personal AI assistant to interact with your notes, PDFs, and learning materials — like chatting with your second brain.",
-  link: "https://jocasta.live",
-  linkText: "jocasta.live",
+    "An AI-powered, swipable knowledge map that helps users explore, research, and discover different aspects of any topic through an interactive, game-like interface.",
+  link: "https://kbnet.p8labs.tech",
+  linkText: "kbnet -> P8' labs",
   image:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1749613374/og_qym8nv.png",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1750742752/kbnet_landing_otyohg.png",
   video:
-    "https://res.cloudinary.com/pz-public-assets/video/upload/v1749569774/jocasta-clip_jxpw9k.mp4",
+    "https://res.cloudinary.com/pz-public-assets/video/upload/v1750742807/KbNet_Demo_lhgkfy.mp4",
 };
 
 export default function OverviewSection() {
