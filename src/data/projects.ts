@@ -23,6 +23,7 @@ const projects = [
     description:
       "A personal AI assistant to interact with your notes, PDFs, and learning materials — like chatting with your second brain.",
     url: "https://jocasta.vercel.app/",
+    githubLink: "https://github.com/PriyanshuPz/jocasta",
   },
   {
     image: projectsImages.rak,
