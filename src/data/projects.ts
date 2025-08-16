@@ -1,4 +1,8 @@
 const projectsImages = {
+  handwar:
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349565/og_nuacml.png",
+  kbnet:
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1750742752/kbnet_landing_otyohg.png",
   jocasta:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1749613374/og_qym8nv.png",
   rak: "https://res.cloudinary.com/pz-public-assets/image/upload/v1749618481/rak_rq1rqn.jpg",
@@ -17,6 +21,14 @@ const projectsImages = {
 };
 
 const projects = [
+  {
+    image: projectsImages.kbnet,
+    title: "KbNet",
+    description:
+      "An AI-powered, swipable knowledge map that helps users explore, research, and discover different aspects of any topic through an interactive, game-like interface.",
+    url: "https://kbnet.p8labs.tech",
+    githubLink: "https://github.com/PriyanshuPz/kbnet",
+  },
   {
     image: projectsImages.jocasta,
     title: "Jocasta",

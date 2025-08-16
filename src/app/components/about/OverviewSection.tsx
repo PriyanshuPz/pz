@@ -7,15 +7,15 @@ import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image";
 
 const currentProject = {
-  title: "Building KbNet 🌿",
+  title: "Building Handwar 🕹️",
   description:
-    "An AI-powered, swipable knowledge map that helps users explore, research, and discover different aspects of any topic through an interactive, game-like interface.",
-  link: "https://kbnet.p8labs.tech",
-  linkText: "kbnet -> P8' labs",
+    "A simple game of war, where you can play against the computer or challenge your friends online.",
+  link: "https://handwar.p8labs.tech",
+  linkText: "Handwar -> P8' labs",
   image:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1750742752/kbnet_landing_otyohg.png",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349577/anim_cjg7xg.gif",
   video:
-    "https://res.cloudinary.com/pz-public-assets/video/upload/v1750742807/KbNet_Demo_lhgkfy.mp4",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349577/anim_cjg7xg.gif",
 };
 
 export default function OverviewSection() {
