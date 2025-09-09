@@ -22,6 +22,14 @@ const projectsImages = {
 
 const projects = [
   {
+    image: projectsImages.handwar,
+    title: "Handwar",
+    description:
+      "A simple game of war, where you can play against the computer or challenge your friends online.",
+    url: "https://handwar.p8labs.tech",
+    githubLink: "https://github.com/PriyanshuPz/handwar",
+  },
+  {
     image: projectsImages.kbnet,
     title: "KbNet",
     description:

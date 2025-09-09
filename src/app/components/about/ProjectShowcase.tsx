@@ -55,9 +55,10 @@ const ProjectShowcase = () => {
                 <>
                   <Image
                     src={project.image}
-                    alt={project.title}
-                    layout="fill"
-                    objectFit="cover"
+                    alt={project.title}fill
+                    // layout="fill"
+                    // objectFit="cover"
+
                     quality={100}
                     priority
                   />

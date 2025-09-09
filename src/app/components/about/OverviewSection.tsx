@@ -7,15 +7,15 @@ import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image";
 
 const currentProject = {
-  title: "Building Handwar 🕹️",
+  title: "Building Row3 😶‍🌫️",
   description:
-    "A simple game of war, where you can play against the computer or challenge your friends online.",
-  link: "https://handwar.p8labs.tech",
-  linkText: "Handwar -> P8' labs",
+    "A online game with no server and no backend, built using cutting-edge web technologies like WebRTC. Experience seamless multiplayer gaming directly in your browser.",
+  link: "https://row3.p8labs.tech",
+  linkText: "Row3 -> P8' labs",
   image:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349577/anim_cjg7xg.gif",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432859/789b58ac-58e8-4ed9-8fca-d8564fea9c78.png",
   video:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349577/anim_cjg7xg.gif",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432818/row3_demo_yhddt4.gif",
 };
 
 export default function OverviewSection() {
@@ -82,8 +82,7 @@ export default function OverviewSection() {
           <div className="absolute inset-0">
             {!isVideoLoaded && (
               <Image
-                layout="fill"
-                objectFit="cover"
+                fill
                 src={currentProject.image}
                 alt="Video placeholder"
               />

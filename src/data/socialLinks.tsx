@@ -31,7 +31,7 @@ const socialLinks = [
   {
     id: "devto",
     name: "Dev.to",
-    url: "https://dev.to/priyanshu_verma",
+    url: "https://dev.to/priyanshuverma",
     icon: <FaDev size={20} color="#FFFFFF" />,
   },
 ];
