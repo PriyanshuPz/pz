@@ -1,4 +1,5 @@
 const projectsImages = {
+  row3: "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432859/789b58ac-58e8-4ed9-8fca-d8564fea9c78.png",
   handwar:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1755349565/og_nuacml.png",
   kbnet:
@@ -21,6 +22,14 @@ const projectsImages = {
 };
 
 const projects = [
+  {
+    image: projectsImages.row3,
+    title: "Row3",
+    description:
+      "A online game with no server and no backend, built using cutting-edge web technologies like WebRTC. Experience seamless multiplayer gaming directly in your browser.",
+    url: "https://row3.p8labs.tech",
+    githubLink: "https://github.com/PriyanshuPz/row3",
+  },
   {
     image: projectsImages.handwar,
     title: "Handwar",

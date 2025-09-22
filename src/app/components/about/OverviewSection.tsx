@@ -7,13 +7,13 @@ import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image";
 
 const currentProject = {
-  title: "Building Row3 😶‍🌫️",
+  title: "Building Post0 📆",
   description:
-    "A online game with no server and no backend, built using cutting-edge web technologies like WebRTC. Experience seamless multiplayer gaming directly in your browser.",
-  link: "https://row3.p8labs.tech",
-  linkText: "Row3 -> P8' labs",
+    "automate your LinkedIn posts with smart scheduling, AI-powered content, and analytics. Create schedules, manage galleries, and grow your presence effortlessly.",
+  link: "https://post0.live",
+  linkText: "Post0 -> Startup",
   image:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432859/789b58ac-58e8-4ed9-8fca-d8564fea9c78.png",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1758517070/Screenshot_2025-09-12_195653_qopgfl.png",
   video:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432818/row3_demo_yhddt4.gif",
 };
@@ -80,14 +80,10 @@ export default function OverviewSection() {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <div className="absolute inset-0">
-            {!isVideoLoaded && (
-              <Image
-                fill
-                src={currentProject.image}
-                alt="Video placeholder"
-              />
-            )}
-            <video
+            <Image fill src={currentProject.image} alt="Video placeholder" />
+            {/* {!isVideoLoaded && (
+            )} */}
+            {/* <video
               ref={videoRef}
               src={currentProject.video}
               autoPlay
@@ -98,7 +94,7 @@ export default function OverviewSection() {
                 isVideoLoaded ? "opacity-100" : "opacity-0"
               }`}
               onLoadedData={handleVideoLoad}
-            />
+            /> */}
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>
           </div>
           <motion.div
