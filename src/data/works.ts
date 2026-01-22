@@ -12,7 +12,7 @@ const works = [
   {
     image: worksImages.p8labs,
     imageBg: "bg-[#fff]",
-    companyName: "P8' Labs",
+    companyName: "P8Labs",
     role: "Founder & Curator",
     startAt: "June 2025",
     endAt: "Present",

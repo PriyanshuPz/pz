@@ -23,6 +23,24 @@ const projectsImages = {
 
 const projects = [
   {
+    image:
+      "https://res.cloudinary.com/pz-public-assets/image/upload/v1769082980/poopmail_qre2mh.png",
+    title: "Poopmail",
+    description:
+      "Poopmail offers a free temporary email service that allows users to create instant disposable email addresses without the need for registration.",
+    url: "https://mail.tsbin.tech",
+    githubLink: "https://github.com/PriyanshuPz/poopmail",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/pz-public-assets/image/upload/v1769083101/c67e3466-57ba-4382-8b75-c7e1bd4f7278.png",
+    title: "tsbin",
+    description:
+      "tsbin is a simple, open-source, temporary file-sharing application that allows users to securely upload, store, and share files.",
+    url: "https://tsbin.tech",
+    githubLink: "https://github.com/PriyanshuPz/tsbin",
+  },
+  {
     image: projectsImages.row3,
     title: "Row3",
     description:
@@ -67,6 +85,7 @@ const projects = [
     title: "StatStream",
     description:
       "a self-hosted analytics tool that tracks essential metrics like page views, user sessions, referrers, and more. With built-in integration to Discord, it allows you to receive real-time updates about your website's activity directly in your Discord channels.",
+    url: "https://statstream.pages.dev",
     githubLink: "https://github.com/DiyBuilds/StatStream",
   },
   {

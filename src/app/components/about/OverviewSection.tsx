@@ -7,13 +7,13 @@ import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image";
 
 const currentProject = {
-  title: "Building Post0 📆",
+  title: "Building Misty 💛",
   description:
-    "automate your LinkedIn posts with smart scheduling, AI-powered content, and analytics. Create schedules, manage galleries, and grow your presence effortlessly.",
-  link: "https://post0.live",
-  linkText: "Post0 -> Startup",
+    "A secure gateway. It helps you sync, manage, share, and publish your personal notes, journals, and ideas. Without becoming the place where they live. ",
+  link: "https://misty.p8labs.tech",
+  linkText: "Misty -> P8labs",
   image:
-    "https://res.cloudinary.com/pz-public-assets/image/upload/v1758517070/Screenshot_2025-09-12_195653_qopgfl.png",
+    "https://res.cloudinary.com/pz-public-assets/image/upload/v1769082663/banner_lgf80i.png",
   video:
     "https://res.cloudinary.com/pz-public-assets/image/upload/v1757432818/row3_demo_yhddt4.gif",
 };
@@ -95,7 +95,7 @@ export default function OverviewSection() {
               }`}
               onLoadedData={handleVideoLoad}
             /> */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>
+            <div className="absolute inset-0 bg-linear-to-tr from-black to-transparent opacity-70"></div>
           </div>
           <motion.div
             className="absolute bottom-0 left-0 right-0 p-4 text-white"
