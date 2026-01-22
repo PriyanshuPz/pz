@@ -33,7 +33,7 @@ export default function Navbar() {
       backdropFilter: "blur(8px)",
       margin: "20px 12px", // Equivalent to mt-5 mx-3
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
       },
@@ -43,7 +43,7 @@ export default function Navbar() {
       backdropFilter: "blur(12px)",
       margin: "8px 12px", // Reduced top margin when scrolled
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
       },
@@ -54,7 +54,7 @@ export default function Navbar() {
     closed: {
       x: "-100%",
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40,
       },
@@ -62,7 +62,7 @@ export default function Navbar() {
     open: {
       x: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 40,
         staggerChildren: 0.07,
@@ -77,7 +77,7 @@ export default function Navbar() {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 15,
       },
@@ -217,7 +217,7 @@ export default function Navbar() {
                   </svg>
                 </motion.button>
               </div>
-              <nav className="flex-grow overflow-y-auto">
+              <nav className="grow overflow-y-auto">
                 <ul className="flex flex-col space-y-1 p-4">
                   {headerNavLinks.map((item, index) => (
                     <motion.li
@@ -259,7 +259,7 @@ export default function Navbar() {
                 transition={{ delay: 0.4 }}
               >
                 <p className="text-white/80 text-sm">
-                  &copy; {new Date().getFullYear()} Abhi Varde. All rights
+                  &copy; {new Date().getFullYear()} Priyanshu Verma. All rights
                   reserved.
                 </p>
               </motion.div>

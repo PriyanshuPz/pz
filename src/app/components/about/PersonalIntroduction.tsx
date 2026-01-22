@@ -2,8 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { LuGlobe, LuRocket } from "react-icons/lu";
 import { BackgroundLines } from "../common/BackgroundLines";
+import Image from "next/image";
 
 const PersonalIntroduction = () => {
   return (
@@ -11,65 +11,37 @@ const PersonalIntroduction = () => {
       <div className="relative overflow-hidden rounded-3xl shadow-2xl">
         <BackgroundLines>
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50"></div>
+            <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/30 to-black/50"></div>
           </div>
 
-          <div className="relative z-10 flex flex-col p-6 sm:p-8">
-            <div className="text-white max-w-xl">
-              <motion.h2
-                className="font-medium uppercase tracking-wider flex items-center text-sm sm:text-base"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <LuGlobe className="mr-2" size={18} />
-                About me
-              </motion.h2>
-              <motion.h1
-                className="mt-3 sm:mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-              >
-                hey, I'm Priyanshu
-                <span className="animate-wave inline-block ml-2">👋</span>
-              </motion.h1>
-              <motion.p
-                className="mt-4 sm:mt-6 text-base sm:text-lg font-light leading-relaxed max-w-2xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                Passionate Techie from India, push myself to be better every
-                day. I love building things, wrting tech blogs, and sharing
-                knowledge with the community.
-              </motion.p>
+          <motion.div
+            className="relative z-10 flex flex-col items-center text-center p-8 sm:p-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/priyanshu.png"
+              alt="Priyanshu"
+              width={120}
+              height={120}
+              className="rounded-full object-cover ring-4 ring-white/20"
+              priority
+            />
+            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+              Priyanshu Verma
+            </h1>
+            <p className="mt-4 text-lg sm:text-xl text-white/80 font-light leading-relaxed max-w-2xl">
+              I create technology that helps people to be more productive.
+            </p>
+            <div className="mt-6 flex gap-4 text-sm text-white/60">
+              <span>🧠 Polymath</span>
+              <span>•</span>
+              <span>🚀 Builder</span>
+              <span>•</span>
+              <span>📍 India</span>
             </div>
-
-            <div className="w-full flex justify-end">
-              <motion.div
-                className="mt-auto pt-8 sm:pt-10 max-w-xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-4 sm:p-6 text-white">
-                  <h2 className="font-medium uppercase tracking-wider flex items-center text-sm sm:text-base">
-                    <LuRocket className="mr-2" size={18} />
-                    My Mission
-                  </h2>
-                  <p className="mt-3 sm:mt-4 text-base sm:text-lg font-light leading-relaxed">
-                    I build tools, systems, games, and stories that connect
-                    ideas to people. I explore, I write, I contribute — because
-                    building is how I think.
-                  </p>
-                  <p className="mt-4 sm:mt-6 text-base sm:text-lg italic">
-                    The ship is the story. The build is the journey. 🚀
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
+          </motion.div>
         </BackgroundLines>
       </div>
     </div>

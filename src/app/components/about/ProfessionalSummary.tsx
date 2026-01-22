@@ -7,135 +7,87 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import works from "@/data/works";
 import skills from "@/data/skills";
+
 const ProfessionalSummary = () => {
   return (
     <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
       <motion.div
-        className="p-4 md:p-6 rounded-3xl border border-[#333] bg-[#111111]"
+        className="p-6 md:p-8 rounded-3xl border border-[#333] bg-[#111111]"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
       >
-        <div>
-          <div className="text-white uppercase tracking-wider flex gap-3 items-center">
-            <span className="bg-[#FF3B00] p-1.5 rounded-md">
-              <IoBriefcaseOutline size={20} color="#FFFFFF" />
-            </span>
-            Work Experience
-          </div>
-          <p className="sm:text-lg mt-4">
-            My work history and accomplishments timeline.
-          </p>
+        <div className="flex items-center gap-3 mb-6">
+          <span className="bg-[#FF3B00] p-2 rounded-lg">
+            <IoBriefcaseOutline size={20} color="#FFFFFF" />
+          </span>
+          <h3 className="text-lg font-semibold text-white">Experience</h3>
+        </div>
+        <div className="space-y-4">
           {works.map((work, i) => (
-            <div
-              key={i}
-              className={`flex items-center gap-4 ${i === 0 ? "mt-6" : "mt-3"}`}
-            >
+            <div key={i} className="flex items-start gap-4">
               <Image
-                height={48}
-                width={48}
+                height={40}
+                width={40}
                 src={work.image}
                 alt={work.companyName}
-                className={`h-12 w-12 object-cover ${work.imageBg} border border-[#333] bg-opacity-30 p-2 rounded-md`}
+                className={`h-10 w-10 object-cover ${work.imageBg} border border-[#333] p-1.5 rounded-lg flex-shrink-0`}
               />
-              <div className="flex w-full flex-col">
-                <p className="hidden sm:block font-medium">
+              <div className="flex-1 min-w-0">
+                <p className="font-medium text-white text-sm">
                   {work.companyName}
                 </p>
-                <div className="flex flex-col sm:flex-row justify-between">
-                  <p className="text-sm">{work.role}</p>
-                  <p className="text-sm">
-                    {work.startAt} - {work.endAt}
-                  </p>
-                </div>
+                <p className="text-sm text-white/70">{work.role}</p>
+                <p className="text-xs text-white/50 mt-1">
+                  {work.startAt} - {work.endAt}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </motion.div>
       <motion.div
-        className="p-4 md:p-6 rounded-3xl border border-[#333] bg-[#111111]"
+        className="p-6 md:p-8 rounded-3xl border border-[#333] bg-[#111111]"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
       >
-        <div>
-          <div className="text-white uppercase tracking-wider flex gap-3 items-center">
-            <span className="bg-[#FF3B00] p-1.5 rounded-md">
-              <LuTerminal size={20} color="#FFFFFF" />
-            </span>
-            Skills
+        <div className="flex items-center gap-3 mb-6">
+          <span className="bg-[#FF3B00] p-2 rounded-lg">
+            <LuTerminal size={20} color="#FFFFFF" />
+          </span>
+          <h3 className="text-lg font-semibold text-white">Skills</h3>
+        </div>
+        <div className="overflow-hidden space-y-2">
+          <div className="flex min-w-full shrink-0 gap-3 py-2 w-max flex-nowrap animate-scroll">
+            {skills.slice(0, 8).map((skill, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2 bg-[#F4F0E6] px-3 py-2 rounded-lg"
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.title}
+                  className="w-4 h-4"
+                />
+                <span className="text-black text-sm">{skill.title}</span>
+              </div>
+            ))}
           </div>
-          <p className="sm:text-lg mt-4">
-            I’ve worked with the following but not limited to.
-          </p>
-          <div className="mt-6 overflow-hidden hidden sm:flex lg:hidden">
-            <div className="flex min-w-full shrink-0 space-x-4 py-4 w-max flex-nowrap animate-scroll">
-              {skills.map((skill, i) => (
-                <div
-                  key={i}
-                  className="flex flex-shrink-0 max-w-full relative justify-center items-center border space-x-1 bg-[#F4F0E6] p-2 text-sm rounded-md shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.title}
-                    className="w-4 h-4"
-                  />
-                  <span className="text-black">{skill.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-6 overflow-hidden flex sm:hidden lg:flex">
-            <div className="flex min-w-full shrink-0 space-x-4 py-4 w-max flex-nowrap animate-scroll">
-              {skills?.slice(0, 6).map((skill, i) => (
-                <div
-                  key={i}
-                  className="flex flex-shrink-0 max-w-full relative justify-center items-center border space-x-1 bg-[#F4F0E6] p-2 text-sm rounded-md shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.title}
-                    className="w-4 h-4"
-                  />
-                  <span className="text-black">{skill.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-2 overflow-hidden flex sm:hidden lg:flex">
-            <div className="flex min-w-full shrink-0 space-x-4 py-4 w-max flex-nowrap animate-scrollReverse">
-              {skills?.slice(6, 12).map((skill, i) => (
-                <div
-                  key={i}
-                  className="flex flex-shrink-0 max-w-full relative justify-center items-center border space-x-1 bg-[#F4F0E6] p-2 text-sm rounded-md shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.title}
-                    className="w-4 h-4"
-                  />
-                  <span className="text-black">{skill.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-2 overflow-hidden flex sm:hidden lg:flex">
-            <div className="flex min-w-full shrink-0 space-x-4 py-4 w-max flex-nowrap animate-scroll">
-              {skills?.slice(12).map((skill, i) => (
-                <div
-                  key={i}
-                  className="flex flex-shrink-0 max-w-full relative justify-center items-center border space-x-1 bg-[#F4F0E6] p-2 text-sm rounded-md shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.title}
-                    className="w-4 h-4"
-                  />
-                  <span className="text-black">{skill.title}</span>
-                </div>
-              ))}
-            </div>
+          <div className="flex min-w-full shrink-0 gap-3 py-2 w-max flex-nowrap animate-scrollReverse">
+            {skills.slice(8, 16).map((skill, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2 bg-[#F4F0E6] px-3 py-2 rounded-lg"
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.title}
+                  className="w-4 h-4"
+                />
+                <span className="text-black text-sm">{skill.title}</span>
+              </div>
+            ))}
           </div>
         </div>
       </motion.div>
